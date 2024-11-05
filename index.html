@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اپلیکیشن ToDo</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>لیست کارها</h1>
+        <form class="todo-input" action="">
+            <input type="text" placeholder="کار جدید اضافه کنید..." id="todo-input">
+            <button type="submit" onclick="addTodo()">افزودن</button>
+        </form>
+        <div class="search-input">
+            <input type="text" placeholder="جستجو کنید..." id="search-input" onkeyup="searchTasks()">
+        </div>
+        <ul class="todo-list" id="todo-list">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
